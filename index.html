@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Site</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="nav-menu">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label for="nav-menu" class="title">Portfolio</label>
+            <ul class="nav-">
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services-title">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+            </ul>
+            <script>
+            $( '.nav-menu ul li a' ).on("click", function(){
+              $('#check').click();
+            });
+        </script>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar">
+          </div>
+        </div>
+        <div class="about-me" id="aboutme">
+            <h3>ABOUT ME</h3>
+                <div class="picture-details">
+                    <img src="Images/my-photo.jpg">
+                    <h2>Valentino Paskov<br><br>Age:23<br><br>City:Vratsa,<br> Bulgaria</h2>
+                </div>
+                <div class="about-me-text">
+                    <p style="margin-top: 3%; padding-bottom: 20px;">
+                        I am a <b style="color: rgb(62, 62, 233);">Web</b> designer and developer. I recently graduated from college and now I am seeking for a <b style="color: rgb(62, 62, 233);">Front End Developer</b> job. I live in <b style="color: rgb(62, 62, 233);">Veliko Tarnovo</b>, Bulgaria, and I was born in <b style="color: rgb(62, 62, 233);">Vratsa</b>, Bulgaria.<br><br> During my free time I love to listen to music, read books and watch movies. I also like to go out for walks and play video games.
+                    </p>
+                </div>
+        </div>
+      
+        <div class="skills">
+          <h3  id="skills" style="padding-top: 70px;">SKILLS</h3>
+            <p style="margin-top: 0px; padding-left:20px; padding-right:20px; font-size: 1rem;">
+                The top 3 skills that I have are <b style="color: rgb(62, 62, 233);">HTML, CSS and JavaScript.</b> I've been coding with these tools for more than <b style="color: rgb(62, 62, 233);">2 years</b>. I also have good understanding and practice with <b style="color: rgb(62, 62, 233);">JQuery</b> and <b style="color: rgb(62, 62, 233);">PHP</b>. Currenly taking a course for <b style="color: rgb(62, 62, 233);">ReactJS</b> and <b style="color: rgb(62, 62, 233);">Wordpress Development</b>.
+            </p>
+
+            <div class="container-skills">
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/HTML5.png" alt="HTML5" class="skill-icon">
+                  </div>
+                  <h3>HTML 5</h3>
+                </div>
+                <p>
+                  I have more than 2 years experience in developing all types of web pages using all HTNL elements.
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/CSS3.png" alt="CSS3" class="skill-icon">
+                  </div>
+                  <h3>CSS 3</h3>
+                </div>
+                <p>
+                  2 years experience with CSS and the preprocessor SaSS. Very good understanding of the concepts of responsive design. 
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/JS.png" alt="JS" class="skill-icon">
+                  </div>
+                  <h3>JavaScript</h3>
+                </div>
+                <p>
+                  I possess intermediate JavaScript skills and knowledge, which helps me build the dynamic and responsivness of every single web page so that the visitor would like to come back again.
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/JQUERY.png" alt="JQUERY" class="skill-icon">
+                  </div>
+                  <h3>JQuery</h3>
+                </div>
+                <p>
+                  Basic understanding of the JavaScript library JQuery. I've completed one project where mainly I was testing my knowledge.
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/ReactJS.png" alt="ReactJS" class="skill-icon">
+                  </div>
+                  <h3>ReactJS</h3>
+                </div>
+                <p>
+                  Currently participating in a ReactJS course, which would help me to get a better grasp of how to use ReactJS to build web applications and more!
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/PHP.png" alt="PHP" class="skill-icon">
+                  </div>
+                  <h3>PHP</h3>
+                </div>
+                <p>
+                  Basic PHP skills, based on collecting data from a web site, and specifically a form, and sending it to the database and collecting data from a database and displaying the results in a web page.
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="skill-img">
+                    <img src="Images/MS SQL.png" alt="MS SQL" class="skill-icon">
+                  </div>
+                  <h3>MS SQL</h3>
+                </div>
+                <p>
+                  Basic knowledge of how databases work. Primary I've built all the required databases for older projects in Microsoft SQL Server Managment Studio. Very good theoritical knowledge of how to structure and excecute queries.
+                </p>
+              </div>
+
+        </div>
+        </div>
+        <br>
+        <h3 id="services-title" style="padding-top:70px;">SERVICES</h3><br>
+        <div class="services" id="services">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1>Discuss</h1> 
+                    <img src="Images/Discuss.jpg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Detailed discussion about what the client wants, what is the budget and how long will the project take. A contract is signed.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h1>Design</h1>
+                      <img src="Images/Design.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Creating mockups of the site and how will it look and presenting them to the client. Discussions about the design and concluding one of all.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h1>Develop</h1>
+                      <img src="Images/Develop.jpg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>This is where the real work happens. Building the product and implementing all the required functionalities.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h1>Deploy</h1>
+                      <img src="Images/Deploy.png">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>This is where the final review of the end product happens and concluding the made contract. After everything is finished, the site is published.</p>
+                  </div>
+                </div>
+              </div>
+              <p style="font-size: 1.2rem; text-align: center; float: left; width: 95%; background-color: white; border-radius: 10%; margin-left: 2.5%; margin-top: 3%;">
+                I have an individual approach to every single client. That way it is ensured that the business would meet it's requirements. I try to establish continious communication with the client durring the entire process of design and development to reduce potentionally unwanted corrections of the process.
+              </p>
+        </div>
+
+        <h3 id="projects" style="padding-top:70px;">PROJECTS</h3>
+        
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img class="slideshow-img"src="Images/Example2.jpg" style="width:100%" alt="Online store for company 'Satan Sounds'.">
+            <p>This site was created for a company named "Satan Sounds" so they can sell their own hand-made products and advertise their services.</p>
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img class="slideshow-img" id="captest" src="Images/Example6.jpg" style="width:100%" alt="School managment system, proected for a school in Vratsa.">
+            <p>The school managment system was developed for a small school in Vratsa, Bulgaria. I was actively participating in the front- end development.</p>
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img class="slideshow-img" src="Images/Example7.jpg" style="width:100%" alt="Complete order form for an online store.">
+            <p>This is a single page check- out process for a online store, made for a customer. The layout is mine.</p>
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img class="slideshow-img" src="Images/Example8.jpg" style="width:100%" alt="My first project for university for a site about rock news.">
+            <p>This is my first ever website, built while I was in college. It's about rock music and rock news and was a part of my final exam for the discipline "DHTML".</p>
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+        
+        <div id="contacts">
+          <h3 id="contacts-title" style="padding-top:70px ;">CONTACTS</h3>
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="lname">Country</label>
+            <input type="text" id="country" name="country" placeholder="Country">
+        
+            <label for="inquiry">Your inquiry</label>
+            <textarea id="inquiry" name="inquiry" placeholder="Don't be shy and say hi! :)" style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <script>
+          // When the user scrolls the page, execute myFunction 
+          window.onscroll = function() {myFunction()};
+          
+          function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+          }
+          </script>
+
+          <div class="footer">
+            <div class="mail-phone">
+              <h6>Email: rundyy3@gmail.com</h6>
+              <h6>Telephone:0896799474</h6>
+            </div> 
+            <div class="social-media">
+              <a href="https://www.facebook.com/Satantani3">
+                <img border="0" alt="Facebook Profile" src="Images/Facebook_icon_2013.svg.png" width="80" height="80">
+                <a href="https://www.google.com/">
+                  <img border="0" alt="Google" src="Images/gugl.jpg" width="80" height="80">
+                  <a href="https://www.linkedin.com/in/valentino-paskov-5898b619b/">
+                    <img border="0" alt="LinkedIn Profile" src="Images/linkedin.png" width="80" height="80">
+            </div>
+
+          </div>
+
+    </body>
+</html>
