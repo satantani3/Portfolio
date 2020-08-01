@@ -71,12 +71,7 @@ a{
     font-size: 1em;
     letter-spacing: 3px;
 }
-a:hover{
-    background-color: rgb(133, 100, 211);
-    border-radius: 20px;
-    color: white;
-    transition: all .6s;
-}
+
 
 @media screen and (max-width:950px){
     .title{float: left; font-size: 2em;}
@@ -179,7 +174,7 @@ a:hover{
     text-align: center;
 }
 .about-me-text{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: left;
     width: 45%;
     float: right;
@@ -195,14 +190,21 @@ a:hover{
 }
 
 @media screen and (max-width: 1100px){
-    .picture-details img{width: 200px; height:auto;}
-    .picture-details{width: 100%; margin-left: 15%;}
-    .picture-details h2{float: left; text-align: center; margin-left:0%; font-size: 1.3em;}
+    .picture-details img{height:auto;}
+    .picture-details{width: 100%; }
+    .picture-details h2{text-align: center; margin-left:0%; font-size: 2.3em;}
     .about-me-text{display: block; width: 95%; text-align: center; margin-right: 2.5%;}
 }
 
-@media screen and (max-width: 554px){
+@media screen and (max-width: 675px){
   .picture-details img{width: 40%; height:auto;}
+  .picture-details h2{font-size: 1.3em;}
+  .about-me-text{font-size:1em;}
+}
+
+@media screen and (max-width: 290px){
+  .about-me h3{padding-top:40%}
+  .title{letter-spacing: 0em;}
   .picture-details h2{font-size: 1em;}
 }
 
@@ -418,11 +420,11 @@ a:hover{
   }
   
   .flip-card-back p{
-      font-size: 1.2em;
+      font-size: 1em;
       font-family: fantasy;
       position: absolute;
       margin: 0;
-      top:20%;
+      top:10%;
       width: 90%;
       padding-left:5%;
       text-align: center;
@@ -434,13 +436,18 @@ a:hover{
   }
   
 
-  @media screen and (max-width:1000px){
+  @media screen and (max-width:1100px){
       .flip-card{flex: 45%; margin-top: 3%;}
+      .flip-card-inner{width:70%; height: 80%;}
   }
 
   @media screen and (max-width:550px){
-      .flip-card{flex: 50%;}
+      .flip-card{flex: 50%; margin-left: 10%;}
   }
+
+  @media screen and (max-width:300px){
+    .flip-card-back p{font-size: 0.9em;}
+}
   
   /*PROJECTS STYLING*/
 
@@ -627,7 +634,7 @@ input[type=text], select, textarea {
   
 @media screen and (max-width:631px){
   .mySlides{width: 95%; padding-left:5%;}
-  .slideshow-container{padding: 0; width: 100%;}
+  .slideshow-container{padding: 0; width: 100%; padding-bottom: 75px;}
   .prev{margin-left:0; padding-left:50px}
   .next{margin-right: 0; padding-right: 50px;}  
 }
@@ -643,13 +650,29 @@ input[type=text], select, textarea {
 
 .mail-phone{
   float: left;
+  padding-top:25px;
 }
 
 .footer h6{
   color:white;
-  line-height: 2.5;
+  line-height: 1.5;
   letter-spacing: 1px;
   font-size: 1.2rem;
+}
+
+#footer-h6{
+  color:white;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  float: none;
+  font-weight: bold;
+}
+
+#footer-h6:hover{
+  animation: none;
 }
 
 .social-media{
@@ -665,7 +688,17 @@ input[type=text], select, textarea {
 }
 
 @media screen and (max-width:500px){
-  .mail-phone h6{line-height: 1.5; letter-spacing: 0; font-size: .6em;}
+  .mail-phone h6{line-height: 1; letter-spacing: 0; font-size: .8em; padding-top: 10px;}
   .social-media a img{width: 25px; height: 25px; display: inline-block; float: none;}
-  .footer{height: 50px;}
+  .social-media a{vertical-align: middle;}
+  #footer-h6{line-height: 1;
+    letter-spacing: 0;
+    font-size: .8em;
+    padding-top: 10px;}
+
+}
+
+@media screen and (max-width:335px){
+  .social-media a img{width: 25px; height: auto;}
+  .mail-phone h6{font-size: .6em;}
 }
