@@ -471,6 +471,15 @@ a{
     margin-top: 3%;
   }
 
+.mySlides a{
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    margin-left: none;
+    float: none;
+    font-size: 1em;
+    letter-spacing: 0px;   
+}
+
 /*CONTACTS STYLING*/
 #contacts-title{
     font-size: 2em;
